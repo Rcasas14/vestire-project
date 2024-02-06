@@ -1,0 +1,10 @@
+.info-side-in {
+    z-index: 6;
+    justify-content: flex-end !important;
+
+    a,
+    p {
+        color: var(--text-color);
+    }
+
+}

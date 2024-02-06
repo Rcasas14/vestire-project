@@ -1,0 +1,26 @@
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+$breakpoints-up: (
+  xs: 0,
+  'sm': 36rem,
+  'md': 48rem,
+  'lg': 62rem,
+  'xl': 75rem,
+  'xxl': 87.5rem
+);
+$breakpoints-down: (
+  xs: 0,
+  'sm': 35.9988rem,
+  'md': 47.9988rem,
+  'lg': 61.9988rem,
+  'xl': 74.9988rem,
+  'xxl': 87.4988rem
+);

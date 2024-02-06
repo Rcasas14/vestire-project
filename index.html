@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="build/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Vestire</title>
+</head>
+
+<body class="body">
+    <!-- Header Start -->
+    <header class="header position-relative">
+        <div class="position-absolute start-0 end-0">
+            <div class="desktop-view">
+                <!--desktop-view-->
+                <div class="top-head d-flex justify-content-between">
+                    <p><a href="">vestire@gmail.com</a></p>
+                    <p><a class="navbar-brand fs-2 text" href="#">VESTIRE STUDIO</a></p>
+                    <p>Call Us:<a href="">+639997607817</a></p>
+                </div>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                        <form class="d-flex" role="search">
+                            <input class="form-control form-control-sm text-white bg-transparent" type="search"
+                                aria-label="Search">
+                            <button class="btn " type="submit"><i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                        <ul class="navbar-nav mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SHOP</a>
+                            </li>
+                        </ul>
+                        <button class="btn info-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">Information
+                        </button>
+
+                    </div>
+                </nav>
+                <div class="info-side-in navbar ">
+                    <div class="offcanvas offcanvas-end p-3" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">VESTIRE STUDIO</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body z-3">
+                            <div class="info-text">
+                                <p>
+                                    <span class="d-block"> Villamor Street , Door 1 Obrero, Davao City, Davao City,
+                                        Philippines, 8000</span>
+                                    <span class="d-block">+639997607817</span>
+                                    <span class="d-block"> Always Open</span>
+                                </p>
+                            </div>
+                            <ul class="d-flex navbar-nav flex-row justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item mx-2">
+                                    <a class="facebook-icon" href="https://www.facebook.com/diadermofficial">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a class="instagram-icon" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Mobile View -->
+            <div class="mobile-view">
+                <div class="d-flex justify-content-between z-5">
+                    <p class="header-mobile-logo"><a href="#"> VESTIRE</a></p>
+                    <button class="navbar-toggler btn-hamburger" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor"
+                            class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+                <nav id="navbar" class="collapse navbar-collapse dropdown-nav mobile-navbar position-absolute mt-3">
+                    <ul class="list-group text-start">
+                        <li><a class="fs-6" href="#">Home</a></li>
+                        <li><a class="fs-6" href="#">Pages</a></li>
+                        <li><a class="fs-6" href="#">Portfolio</a></li>
+                        <li><a class="fs-6" href="#">Blog</a></li>
+                        <li><a class="fs-6" href="#">Shop</a></li>
+                    </ul>
+                    <button class="navbar-toggler text-black close-btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg>
+                    </button>
+                </nav>
+
+            </div>
+        </div>
+        <!-- Hero Carousel -->
+        <div class="hero-slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
+                        class="border rounded active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="border rounded"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                        aria-label="Slide 3" class="border rounded"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item d-flex justify-content-center align-items-center active">
+                        <img src="images/vestire-dress-hero-1.jpg" class="d-block " alt="wedding dress">
+                        <div class="carousel-caption d-md-block">
+                            <h3>Vestire has over 40 years of experience</h3>
+                            <p class="text-white">Pioneering fashion for over four decades, and we're just getting
+                                started</p>
+                            <button type="button" class="btn border border-white bg-transparent btn-secondary btn-lg"><a
+                                    class="text-white" href="#">DISCOVER</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center align-items-center">
+                        <img src="images/vestire-dress-hero-2.jpg" class="d-block " alt="fashion dress">
+                        <div class="carousel-caption d-md-block">
+                            <h3>Discover the best tailor studio around</h3>
+                            <p class="text-white">Choose the tailor studio that defines excellence.</p>
+                            <button type="button" class="btn border border-white bg-transparent btn-secondary btn-lg"><a
+                                    class="text-white" href="#">DISCOVER</a></button>
+                        </div>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center align-items-center">
+                        <img src="images/vestire-dress-hero-3.jpg" class="d-block " alt="tailoring">
+                        <div class="carousel-caption d-md-block">
+                            <h3>Premium couture team. Hight-end suits.</h3>
+                            <p class="text-white">Unveil the artistry of high-end suits with our exclusive premium
+                                couture team.</p>
+                            <button type="button" class="btn border border-white bg-transparent btn-secondary btn-lg"><a
+                                    class="text-white" href="#">DISCOVER</a></button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <div class="to-hero-nav ">
+        <a href="#"
+            class="to-hero-nav-link d-flex justify-content-center align-items-center position-fixed border rounded-circle border-opacity-50"><i
+                class="bi-arrow-up-short text-secondary-emphasis to-hero-nav-icon"></i></a>
+    </div>
+
+    <!-- ---floating navbar---- -->
+    <div class="postion-relative d-block">
+        <nav class=" navbar-expand-lg floating-navbar">
+            <div class="container collapse navbar-collapse justify-content-between " id="navbarSupportedContent">
+
+                <p class="header-mobile-logo"><a href="#"> VESTIRE</a></p>
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                </ul>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Information
+                </button>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- ---floating navbar end---- -->
+
+    <section class="container section-text d-block">
+        <div class="px-4 container">
+            <div class="d-flex justify-content-between align-items-center section-text-title">
+                <div class="section-text-title-header my-5">
+                    <h2 class="h2">Individuality of your design.</h2>
+                    <h2 class="h2">Create your style.</h2>
+                    <span class="span">High Quality Tailor</span>
+                </div>
+                <div class="section-text-title-body">
+                    <p>
+                        Unlock the limitless potential of your creativity with us. Embrace the individuality of your
+                        design and express your unique style like never before. Our platform is your canvas; your
+                        imagination is the paintbrush. Create your style, and let your vision shine in a world that
+                        celebrates originality.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-divider"><span class=""></span></section>
+    <!-- Mobile view carousel START-->
+    <section class="carousel-mobile px-4">
+        <div id="carouselDesignSection" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/tailor-vertical-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption position-relative d-md-block">
+                        <h5>Singer Machine</h5>
+                        <p>Custom Tailored</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tailor-vertical-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption position-relative d-md-block">
+                        <h5>Dress Tailor</h5>
+                        <p>Dress Tailor</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tailor-vertical-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption position-relative d-md-block">
+                        <h5>Best Gown</h5>
+                        <p>Elegancy</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tailor-vertical-4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption position-relative d-md-block">
+                        <h5>Best for Weddings</h5>
+                        <p>Custom Made</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/tailor-vertical-5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption position-relative d-md-block">
+                        <h5>Best Design</h5>
+                        <p>First Class</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselDesignSection" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselDesignSection" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselDesignSection" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselDesignSection" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselDesignSection" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+
+        </div>
+    </section>
+    <!-- Mobile view carousel END-->
+
+    <!-- Desktop view carousel START-->
+    <section class="carousel-desktop">
+
+        <div class=" container justify-content-center align-items-center">
+            <div id="recipeCarousel" class=" head-carousel">
+                <div class="owl-carousel owl-theme carousel-inside z-0">
+                    <div class="card">
+                        <p class="modal-link"><img src="images/tailor-vertical-1.jpg" class="card-img-top" alt=""></p>
+                        <div class="card-body">
+                            <p class="card-title text-center" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                                Singer Machine</p>
+                            <div class="d-block text-center">
+                                <p class="slide-text text-center" data-bs-toggle="modal"
+                                    data-bs-target="#carouselModal">
+                                    Custom Tailored</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="modal-link"><img src="images/tailor-vertical-2.jpg" class="card-img-top" alt=""></p>
+                        <div class="card-body">
+                            <p class="card-title text-center" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                                Dress Tailor</p>
+                            <div class="d-block text-center">
+                                <p class="slide-text text-center" data-bs-toggle="modal"
+                                    data-bs-target="#carouselModal">
+                                    Dress Tailor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="modal-link"><img src="images/tailor-vertical-3.jpg" class="card-img-top" alt=""></p>
+                        <div class="card-body">
+                            <p class="card-title text-center" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                                Best Gown</p>
+                            <div class="d-block text-center">
+                                <p class="slide-text text-center" data-bs-toggle="modal"
+                                    data-bs-target="#carouselModal">
+                                    Elegancy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="modal-link"><img src="images/tailor-vertical-4.jpg" class="card-img-top" alt=""></p>
+                        <div class="card-body">
+                            <p class="card-title text-center" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                                Best for Weddings</p>
+                            <div class="d-block text-center">
+                                <p class="slide-text text-center" data-bs-toggle="modal"
+                                    data-bs-target="#carouselModal">
+                                    Custom Made</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="modal-link"><img src="images/tailor-vertical-5.jpg" class="card-img-top" alt=""></p>
+                        <div class="card-body">
+                            <p class="card-title text-center" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                                Best Design</p>
+                            <div class="d-block text-center">
+                                <p class="slide-text text-center" data-bs-toggle="modal"
+                                    data-bs-target="#carouselModal">
+                                    First Class</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Desktop view carousel END-->
+
+    <!-- Carousel Modal START -->
+    <div class="carousel-modal modal fade" id="carouselModal" tableindex="-1" aria-labelledby="carouselModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>TROUBLE TROUBLE</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Modal END -->
+
+    </div>
+
+    <section class="second-hero">
+        <div class="second-hero-main d-flex justify-content-center">
+            <div class="container second-hero-left">
+                <div class="second-hero-title">
+                    <h2 class="text-white">Bespoke Suit & Dress Making Professionals</h2>
+                    <span class="sub-title text-white">High Quality</span>
+                </div>
+                <div class="second-hero-desc">
+                    <p class="text-white">Elevate your style with precision and craftsmanship. Discover the epitome of
+                        sartorial excellence
+                        with our bespoke suit and dress making professionals.
+                    </p>
+                </div>
+                <button type="button"
+                    class="btn d-block m-auto border border-white bg-transparent btn-secondary btn-lg"><a
+                        class="text-white" href="#">EXPLORE</a></button>
+            </div>
+            <div class="second-hero-right z-0">
+                <div class="second-hero-image d-flex justify-content-center text-center">
+                    <img src="images/second-hero-image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section-text border-bottom-style d-block">
+        <div class="px-4 container custom-margin ">
+            <div class="d-flex justify-content-between flex-column align-items-center section-text-title">
+                <div class="section-text-title-header my-1">
+                    <div class="hide-for-desktop">
+                        <h2 class="h2 text-center">Individuality of </h2>
+                        <h2 class="h2 text-center">your style.</h2>
+                    </div>
+                    <div class="hide-for-mobile">
+                        <h2 class="h2 text-center">Individuality of your style</h2>
+                    </div>
+                    <p class="span text-center fs-5">Best Quality Tailor</p>
+                </div>
+                <div class="section-text-title-body">
+                    <p class="text-center fs-6">
+                        Create your style, and let your vision shine in a world that
+                        celebrates originality.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="tailor-artist">
+        <div class="tailor-artist-container d-flex">
+            <div class="tailor-artist-content container-fluid justify-content-center align-items-center">
+                <img src="images/tailor-artist-karolina.jpg" alt="tailor portrait">
+                <p class="tailor-artist-name fs-2">Karolina Nilov</p>
+                <div class="tailor-artist-role">Modelist</div>
+            </div>
+            <div class="tailor-artist-content container-fluid">
+                <img src="images/tailor-artist-noemi.jpg" alt="tailor portrait">
+                <p class="tailor-artist-name fs-2">Noemi Carlsen</p>
+                <div class="tailor-artist-role">Art Director</div>
+            </div>
+            <div class="tailor-artist-content container-fluid">
+                <img src="images/tailor-artist-Pablo.jpg" alt="tailor portrait">
+                <p class="tailor-artist-name fs-2">Pablo Gooday</p>
+                <div class="tailor-artist-role">First Tailor</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee">
+        <div class="marquee-content">
+            <div class="marquee-element" behavior="slide" direction="left"><span> Individuality of your style</span>
+                Weekend
+                Special Sale 50% <span> Individuality of your style</span> Weekend Special Sale 50% <span> Individuality
+                    of your style</span> Weekend Special Sale 50%</div>
+        </div>
+    </section>
+
+    <section class="people-say-about-us d-block container">
+        <div class="px-4">
+            <div class="people-say-about-us-header">
+                <h2 class="title">What People Say About Us</h2>
+                <p class="text-center fs-5">Hight Quality Tailor</p>
+            </div>
+            <div class="people-say-about-us-carousel">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Owl Carousel Jquery script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

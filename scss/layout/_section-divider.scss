@@ -1,0 +1,14 @@
+.section-divider {
+    position: relative;
+    padding: 20px 0;
+
+    span {
+        border-bottom: 1px dashed var(--sub-feature-color);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+       
+    }
+
+}

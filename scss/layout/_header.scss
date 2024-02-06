@@ -1,0 +1,161 @@
+@use '../globals/fonts'as font;
+@use '../globals/variables'as var;
+@use 'media-queries'as *;
+
+.header {
+    z-index: 1;
+    background-color: var(--vestire-color);
+
+    &-mobile-logo {
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    
+    .top-head {
+        p {
+            @include breakpoint-up(lg) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include breakpoint-down(sm) {
+        padding: 0 !important;
+    }
+
+    a,
+    a:active,
+    a:hover,
+    button,
+    p,
+    input {
+        color: var(--text-color);
+        font-family: font.$jost;
+
+        @include breakpoint-up(lg) {
+            color: var(--white);
+        }
+    }
+
+    .desktop-view {
+        @include breakpoint-down(sm) {
+            display: none;
+        }
+
+        @include breakpoint-up(lg) {
+            padding: 3rem 3rem 0 3rem;
+        }
+
+        ul {
+
+            @include breakpoint-up(lg) {
+                margin-right: 15%;
+            }
+
+            li {
+                @include breakpoint-up(lg) {
+                    &:not(:last-child) {
+                        padding-right: 10%;
+                    }
+                }
+
+                a {
+                    position: relative;
+                    transition: all .5s;
+
+                    @include breakpoint-up(md) {
+                        font-size: 12px;
+                    }
+
+                    &:hover {
+                        @include breakpoint-up(lg) {
+                            color: #555;
+                        }
+                    }
+
+                    &:after {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        width: 0%;
+                        content: '.';
+                        color: transparent;
+                        height: 1px;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+
+                    @include breakpoint-up(lg) {
+                        &:focus {
+                            color: #fff;
+                            border-bottom: 1px solid #ffff;
+
+
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .mobile-view {
+        padding-top: 0;
+        padding: 1rem;
+
+        @include breakpoint-up(sm) {
+            display: none;
+        }
+
+        @include breakpoint-down(sm) {
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-color: var(--white);
+        }
+
+
+        .mobile-navbar {
+            position: relative;
+            background-color: var(--white);
+            width: 100%;
+            left: 0;
+            right: 0;
+            padding: 0 32px;
+
+            a,
+            a:active,
+            a:visited {
+                font-family: font.$inter;
+                color: var(--text-color);
+            }
+
+            .list-group {
+                margin-bottom: .625rem;
+
+                li {
+                    padding: 4px 0;
+
+                }
+            }
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 16px;
+            
+        }
+    }
+
+}

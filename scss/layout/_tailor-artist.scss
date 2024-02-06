@@ -1,0 +1,69 @@
+@use "../layout/media-queries"as *;
+@use "../globals/fonts"as font;
+
+.tailor-artist {
+    text-align: center;
+
+    @include breakpoint-up(lg){
+        border-top: 1px dashed var(--sub-feature-color);
+    }
+
+    &-container {
+        flex-direction: column;
+
+        @include breakpoint-up(lg) {
+            flex-direction: row;
+
+        }
+    }
+
+    &-content {
+        padding: 50px 0 65px 0;
+        border-bottom: 1px dashed var(--sub-feature-color);
+
+        @include breakpoint-up(lg) {
+            &:not(:last-child) {
+                border-right: 1px dashed var(--sub-feature-color);
+            }
+
+            padding: inherit 0;
+        }
+
+        img {
+            width: auto;
+
+            @include breakpoint-up(lg){
+                width: 60%;
+            }
+        }
+
+        &:nth-child(2) {
+            img {
+                border-radius: 0 239px 218px 233px;
+            }
+        }
+
+        &:nth-child(3) {
+            img {
+                border-radius: 150px 0 0 0;
+            }
+        }
+    }
+
+
+
+    &-name {
+        text-align: center;
+        font-family: font.$jost;
+        //font-size: 30px;
+        margin: 10px 0 0 0;
+    }
+
+    &-role {
+        font-family: font.$ibrra-real-nava;
+        color: var(--sub-feature-color);
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+    }
+}

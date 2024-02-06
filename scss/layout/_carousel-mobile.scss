@@ -1,0 +1,48 @@
+@use "../layout/media-queries"as *;
+@use '../globals/fonts'as font;
+
+.carousel-mobile {
+    @include breakpoint-up(lg) {
+        display: none;
+    }
+
+    .carousel-indicators {
+        position: inherit !important;
+        margin: 10px 0;
+
+        button {
+            background-color: #000;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            margin: 0 15px;
+
+        }
+        padding-bottom: 64px;
+    }
+
+    .carousel-inner {
+        padding-top: 76px;
+    }
+
+    .carousel-item {
+        .carousel-caption {
+            right: inherit;
+            bottom: inherit;
+            left: inherit;
+            padding-bottom: 0;
+
+            h5 {
+                color: var(--text-color);
+                font-family: font.$jost;
+            }
+            p {
+                font-family: font.$ibrra-real-nava;
+                font-style: italic;
+                color: var(--sub-feature-color);
+            }
+
+        }
+    }
+
+}

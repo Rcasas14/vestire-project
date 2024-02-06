@@ -1,0 +1,87 @@
+@use "../layout/media-queries"as *;
+@use '../globals/fonts'as font;
+
+.carousel-desktop {
+    @include breakpoint-down(sm) {
+        display: none;
+    }
+
+    margin: 40px 0;
+
+    .carousel-inside {
+        
+        .card {
+            border: none;
+
+            .card-body {
+                .card-img {
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 22rem;
+                    }
+
+                    & {
+                        margin: 0 20px;
+                    }
+                }
+
+                .card-title {
+                    color: var(--text-color);
+                    font-family: font.$jost;
+                    display: block;
+                    padding: 0;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                }
+
+                .slide-text {
+                    font-family: font.$ibrra-real-nava;
+                    font-style: italic;
+                    color: var(--sub-feature-color);
+                    text-decoration: none;
+                    display: inline-block;
+                    position: relative;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:after {
+                        content: '';
+                        margin: auto;
+                        display: block;
+                        height: 1px;
+                        width: 0%;
+                        background-color: var(--sub-feature-color);
+                        transition: all 0.5s ease;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        background-color: var(--sub-feature-color);
+                    }
+                }
+            }
+
+
+        }
+
+        // .carousel-item {
+        //     margin: 0 30px;
+        // }
+
+        .item {
+            margin: 0 30px;
+        }
+
+    }
+
+
+
+
+}

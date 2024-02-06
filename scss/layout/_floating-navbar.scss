@@ -1,0 +1,58 @@
+@use "../layout/media-queries"as *;
+@use '../globals/fonts'as font;
+
+.floating-navbar {
+    display: flex;
+    height: 70px;
+    background-color: var(--vestire-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    & {
+        top: 100%;
+        transition: all .3s ease-out;
+    }
+
+    @include breakpoint-down(sm) {
+        display: none;
+    }
+
+    .header-mobile-logo {
+        a:hover {
+            color: #000;
+        }
+    }
+
+
+    .nav-item {
+        a {
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+                color: var(--text-color);
+            }
+
+            &:after {
+                content: '';
+                margin: auto;
+                display: block;
+                height: 1px;
+                width: 0%;
+                background-color: #000;
+                transition: all 0.5s ease;
+            }
+
+            &:hover:after {
+                width: 100%;
+                background-color: #000;
+            }
+        }
+    }
+
+}

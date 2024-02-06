@@ -1,0 +1,42 @@
+@use "../layout/media-queries" as *;
+@use "../globals/fonts" as font;
+@use "../globals/boilerplates" as *;
+
+.marquee {
+    .marquee-content {
+        background-color: var(--secondary-color);
+        font-family: font.$ibrra-real-nava;
+        color: var(--sub-feature-color);
+        white-space: nowrap;
+        overflow: hidden;
+
+        .marquee-element {
+            background-color: var(--secondary-color);
+            padding: 20px 0;
+            padding-left: 15px;
+            animation: marquee 5s linear infinite;
+
+            span {
+                font-family: font.$ibrra-real-nava;
+                font-style: italic;
+                color: var(--sub-feature-color);
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                padding-left: 15px;
+            }
+
+            @keyframes marquee {
+                0% {
+                    transform: translate(0, 0);
+                }
+
+                100% {
+                    transform: translate(-100%, 0);
+                }
+            }
+        }
+    }
+
+
+}

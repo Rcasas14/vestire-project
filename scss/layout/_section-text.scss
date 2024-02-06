@@ -1,0 +1,81 @@
+@use "../layout/media-queries"as *;
+@use "../globals/fonts"as font;
+
+
+.section-text {
+
+    .px-4 {
+        @include breakpoint-down(sm) {
+            padding: 0 !important;
+        }
+    }
+
+    .section-text-title {
+        @include breakpoint-down(sm) {
+            flex-direction: column !important;
+        }
+
+        &-header {
+
+            @include breakpoint-up(lg) {
+                min-width: 31.25rem;
+
+            }
+
+            h2 {
+                font-family: font.$jost;
+                font-weight: 400;
+                font-size: 29px;
+                font-size: 39px;
+
+                @include breakpoint-up(lg) {
+                    line-height: 1;
+                }
+            }
+
+            .span {
+                font-family: font.$ibrra-real-nava;
+                color: var(--sub-feature-color);
+                font-style: italic;
+
+                @include breakpoint-up(lg) {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        .section-text-title-body {
+            p {
+                color: var(--sub-feature-color);
+                font-family: font.$inter;
+
+                @include breakpoint-up(lg) {
+
+                    font-size: 17px;
+                    line-height: 1.5;
+                }
+
+
+            }
+
+        }
+    }
+
+    .custom-margin {
+        margin: 73px 0;
+
+        @include breakpoint-up(lg) {
+            margin: 0;
+        }
+    }
+
+}
+
+.border-bottom-style {
+    border-bottom: 1px dashed var(--sub-feature-color);
+
+    @include breakpoint-up(lg) {
+        padding: 0 0 40px 0;
+        border-bottom: none;
+    }
+}
