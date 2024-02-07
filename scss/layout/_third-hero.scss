@@ -1,0 +1,20 @@
+@use "../layout/media-queries"as *;
+@use "../globals/fonts"as font;
+
+.third-hero{
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    @include breakpoint-up(lg){
+        height: 500px;
+    }
+
+    .third-hero-image{
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+
+}

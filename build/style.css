@@ -674,4 +674,20 @@ ul, ul::before, ul::after {
   100% {
     transform: translate(-100%, 0);
   }
+}
+
+.third-hero {
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+@media (min-width: 62rem) {
+  .third-hero {
+    height: 500px;
+  }
+}
+.third-hero .third-hero-image {
+  display: block;
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
