@@ -267,11 +267,6 @@ ul, ul::before, ul::after {
 .to-hero-nav {
   position: relative;
 }
-@media (max-width: 35.9988rem) {
-  .to-hero-nav {
-    display: none;
-  }
-}
 .to-hero-nav .to-hero-nav-link {
   z-index: 999;
   margin: 20px 30px;
@@ -683,11 +678,27 @@ ul, ul::before, ul::after {
 }
 @media (min-width: 62rem) {
   .third-hero {
-    height: 500px;
+    height: 400px;
   }
 }
 .third-hero .third-hero-image {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.people-say-about-us {
+  text-align: center;
+  padding: 50px 0;
+}
+.people-say-about-us .title {
+  font-size: 39px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.people-say-about-us p {
+  font-family: "Ibarra Real Nova", serif;
+  color: var(--sub-feature-color);
+  font-size: 20px;
+  font-style: italic;
 }/*# sourceMappingURL=style.css.map */

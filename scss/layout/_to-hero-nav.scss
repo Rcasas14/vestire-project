@@ -2,10 +2,6 @@
 .to-hero-nav {
     position: relative;
 
-    @include breakpoint-down(sm) {
-        display: none;
-    }
-
     .to-hero-nav-link {
         z-index: 999;
         margin: 20px 30px;
