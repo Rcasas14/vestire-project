@@ -12,20 +12,22 @@
 
     }
 
-    p {
+    .sub-text {
         font-family: font.$ibrra-real-nava;
         color: var(--sub-feature-color);
         font-size: 20px;
         font-style: italic;
+        border: 2px solid #000;
 
     }
 
     .people-say-about-us-carousel {
 
         .card-body {
+            background-color: #000;
             .card-text {
                 font-style: none;
-                font-family: font.$jost;
+                font-family: font.$jost !important;
             }
         }
     }

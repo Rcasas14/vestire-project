@@ -696,7 +696,7 @@ ul, ul::before, ul::after {
   font-family: "Jost", sans-serif;
   font-weight: 400;
 }
-.people-say-about-us p {
+.people-say-about-us .sub-text {
   font-family: "Ibarra Real Nova", serif;
   color: var(--sub-feature-color);
   font-size: 20px;
