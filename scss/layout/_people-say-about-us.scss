@@ -1,22 +1,32 @@
 @use "../layout/media-queries"as *;
-@use '../globals/fonts' as font;
+@use '../globals/fonts'as font;
 
-.people-say-about-us{
+.people-say-about-us {
     text-align: center;
     padding: 50px 0;
 
-    .title{
+    .title {
         font-size: 39px;
         font-family: font.$jost;
         font-weight: 400;
-        
+
     }
-    
-    p{
+
+    p {
         font-family: font.$ibrra-real-nava;
         color: var(--sub-feature-color);
         font-size: 20px;
         font-style: italic;
-        
+
+    }
+
+    .people-say-about-us-carousel {
+
+        .card-body {
+            .card-text {
+                font-style: none;
+                font-family: font.$jost;
+            }
+        }
     }
 }
