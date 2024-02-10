@@ -4,6 +4,10 @@
 .people-say-about-us{
     text-align: center;
     padding: 50px 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
     .title{
         font-size: 39px;
@@ -12,11 +16,40 @@
         
     }
     
-    p{
+    .sub-text{
         font-family: font.$ibrra-real-nava;
         color: var(--sub-feature-color);
         font-size: 20px;
         font-style: italic;
         
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0;
+        bottom: -15%;
+
+        button {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+    }
+
+    .carousel-inner {
+        position: relative;
+        height: 35vh;
+    }
+
+    .carousel-item {
+        padding: 0 25px;
+        .card-body {
+            height: 100%;
+            text-align: left;
+            .card-title {
+                font-family: font.$jost;
+                font-size: 24px;
+                font-weight: 400;
+            }
+            
+        }
     }
 }

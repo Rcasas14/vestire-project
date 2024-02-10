@@ -690,15 +690,42 @@ ul, ul::before, ul::after {
 .people-say-about-us {
   text-align: center;
   padding: 50px 0;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .people-say-about-us .title {
   font-size: 39px;
   font-family: "Jost", sans-serif;
   font-weight: 400;
 }
-.people-say-about-us p {
+.people-say-about-us .sub-text {
   font-family: "Ibarra Real Nova", serif;
   color: var(--sub-feature-color);
   font-size: 20px;
   font-style: italic;
+}
+.people-say-about-us .carousel-indicators {
+  margin-bottom: 0;
+  bottom: -15%;
+}
+.people-say-about-us .carousel-indicators button {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.people-say-about-us .carousel-inner {
+  position: relative;
+  height: 35vh;
+}
+.people-say-about-us .carousel-item {
+  padding: 0 25px;
+}
+.people-say-about-us .carousel-item .card-body {
+  height: 100%;
+  text-align: left;
+}
+.people-say-about-us .carousel-item .card-body .card-title {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
