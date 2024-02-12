@@ -1,7 +1,7 @@
 @use "../layout/media-queries"as *;
-@use '../globals/fonts' as font;
+@use '../globals/fonts'as font;
 
-.people-say-about-us{
+.people-say-about-us {
     text-align: center;
     padding: 50px 0;
     height: 80vh;
@@ -9,24 +9,30 @@
     justify-content: center;
     flex-direction: column;
 
-    .title{
+    .title {
         font-size: 39px;
         font-family: font.$jost;
         font-weight: 400;
-        
+
     }
-    
-    .sub-text{
+
+    .sub-text {
         font-family: font.$ibrra-real-nava;
         color: var(--sub-feature-color);
         font-size: 20px;
         font-style: italic;
-        
+
+    }
+
+    .card-body {
+        position: relative;
+        padding: 30px;
     }
 
     .carousel-indicators {
         margin-bottom: 0;
-        bottom: -15%;
+        bottom: -30%;
+        
 
         button {
             background-color: rgba(0, 0, 0, 0.5);
@@ -35,21 +41,47 @@
     }
 
     .carousel-inner {
+        display: flex;
+        align-items: center;
         position: relative;
-        height: 35vh;
+        height: auto;
+        overflow: visible;
     }
 
     .carousel-item {
         padding: 0 25px;
+        position: relative;
+        
+
         .card-body {
             height: 100%;
             text-align: left;
+
             .card-title {
                 font-family: font.$jost;
                 font-size: 24px;
                 font-weight: 400;
             }
-            
+
+            .card-subtitle {
+                padding: 20px 0;
+            }
+
+        }
+
+        .people-say-about-us-cont {
+            position: absolute;
+            bottom: -37px;
+            right: 25px;
+            display: flex;
+            justify-content: right;
+
+            .people-say-about-us-image {
+                border-radius: 50%;
+                max-width: 100%;
+                border: none;
+                box-shadow: none;
+            }
         }
     }
 }

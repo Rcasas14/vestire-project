@@ -706,19 +706,27 @@ ul, ul::before, ul::after {
   font-size: 20px;
   font-style: italic;
 }
+.people-say-about-us .card-body {
+  position: relative;
+  padding: 30px;
+}
 .people-say-about-us .carousel-indicators {
   margin-bottom: 0;
-  bottom: -15%;
+  bottom: -30%;
 }
 .people-say-about-us .carousel-indicators button {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .people-say-about-us .carousel-inner {
+  display: flex;
+  align-items: center;
   position: relative;
-  height: 35vh;
+  height: auto;
+  overflow: visible;
 }
 .people-say-about-us .carousel-item {
   padding: 0 25px;
+  position: relative;
 }
 .people-say-about-us .carousel-item .card-body {
   height: 100%;
@@ -728,4 +736,20 @@ ul, ul::before, ul::after {
   font-family: "Jost", sans-serif;
   font-size: 24px;
   font-weight: 400;
+}
+.people-say-about-us .carousel-item .card-body .card-subtitle {
+  padding: 20px 0;
+}
+.people-say-about-us .carousel-item .people-say-about-us-cont {
+  position: absolute;
+  bottom: -37px;
+  right: 25px;
+  display: flex;
+  justify-content: right;
+}
+.people-say-about-us .carousel-item .people-say-about-us-cont .people-say-about-us-image {
+  border-radius: 50%;
+  max-width: 100%;
+  border: none;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */
