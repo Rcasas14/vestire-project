@@ -8,11 +8,19 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+    &-header{
+        margin: 50px 0;
+    }
 
     .title {
         font-size: 39px;
         font-family: font.$jost;
         font-weight: 400;
+
+        @include breakpoint-up(lg){
+            font-size: 42px;
+        }
 
     }
 
@@ -32,7 +40,7 @@
     .carousel-indicators {
         margin-bottom: 0;
         bottom: -30%;
-        
+
 
         button {
             background-color: rgba(0, 0, 0, 0.5);
@@ -51,7 +59,7 @@
     .carousel-item {
         padding: 0 25px;
         position: relative;
-        
+
 
         .card-body {
             height: 100%;
@@ -84,4 +92,54 @@
             }
         }
     }
+
+    .people-say-carousel-inner {
+        
+
+        .card-box {
+            display: block;
+            padding: 1px;
+            position: relative;
+        }
+
+        .card-body {
+            padding: 48px 59px 51px;
+            border: 1px solid rgba(0, 0, 0, .125);
+            margin-bottom: 35px;
+            text-align: left;
+            border-radius: 5px;
+
+            .card-title {
+                font-family: font.$jost;
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            .card-subtitle {
+                padding: 20px 0;
+
+            }
+        }
+
+        .people-say-about-us-cont {
+            opacity: 1;
+            position: absolute;
+            height: auto;
+            width: auto;
+            border-radius: 100%;
+            z-index: 2;
+            bottom: 0;
+            right: 25px;
+            transition: opacity .2s ease-out .25s;
+
+        }
+
+        .people-say-about-us-image {
+            width: auto;
+            border-radius: 50%;
+
+        }
+
+    }
+
 }

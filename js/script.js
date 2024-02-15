@@ -21,6 +21,18 @@ $('.owl-carousel.carousel-inside').owlCarousel({
         }
     }
 });
+$('.owl-carousel.people-say-carousel-inner').owlCarousel({
+    dots: true,
+    items: 3,
+    loop: true,
+    margin: 50,
+    stagePadding: 30,
+    autoplay: true,
+    nav: false,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    smartSpeed: 1000,
+});
 
 let carouselDesktop = document.querySelector('.first-feature');
 

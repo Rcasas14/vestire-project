@@ -42,7 +42,7 @@ p {
 
 a, a:visited, a:active, a:hover, p {
   text-decoration: none !important;
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 ul, ul::before, ul::after {
@@ -329,6 +329,11 @@ ul, ul::before, ul::after {
   background-color: #000;
 }
 
+@media (min-width: 62rem) {
+  .section-text {
+    margin: 50px 0;
+  }
+}
 @media (max-width: 35.9988rem) {
   .section-text .px-4 {
     padding: 0 !important;
@@ -640,6 +645,9 @@ ul, ul::before, ul::after {
   text-align: center;
 }
 
+.marquee {
+  margin: 50px 0;
+}
 .marquee .marquee-content {
   background-color: var(--secondary-color);
   font-family: "Ibarra Real Nova", serif;
@@ -673,12 +681,17 @@ ul, ul::before, ul::after {
 
 .third-hero {
   overflow: hidden;
-  position: relative;
   width: auto;
+  margin: 50px 0;
+}
+@media (max-width: 35.9988rem) {
+  .third-hero {
+    position: relative;
+  }
 }
 @media (min-width: 62rem) {
   .third-hero {
-    height: 400px;
+    height: 90vh;
   }
 }
 .third-hero .third-hero-image {
@@ -695,10 +708,18 @@ ul, ul::before, ul::after {
   justify-content: center;
   flex-direction: column;
 }
+.people-say-about-us-header {
+  margin: 50px 0;
+}
 .people-say-about-us .title {
   font-size: 39px;
   font-family: "Jost", sans-serif;
   font-weight: 400;
+}
+@media (min-width: 62rem) {
+  .people-say-about-us .title {
+    font-size: 42px;
+  }
 }
 .people-say-about-us .sub-text {
   font-family: "Ibarra Real Nova", serif;
@@ -752,4 +773,39 @@ ul, ul::before, ul::after {
   max-width: 100%;
   border: none;
   box-shadow: none;
+}
+.people-say-about-us .people-say-carousel-inner .card-box {
+  display: block;
+  padding: 1px;
+  position: relative;
+}
+.people-say-about-us .people-say-carousel-inner .card-body {
+  padding: 48px 59px 51px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 35px;
+  text-align: left;
+  border-radius: 5px;
+}
+.people-say-about-us .people-say-carousel-inner .card-body .card-title {
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.people-say-about-us .people-say-carousel-inner .card-body .card-subtitle {
+  padding: 20px 0;
+}
+.people-say-about-us .people-say-carousel-inner .people-say-about-us-cont {
+  opacity: 1;
+  position: absolute;
+  height: auto;
+  width: auto;
+  border-radius: 100%;
+  z-index: 2;
+  bottom: 0;
+  right: 25px;
+  transition: opacity 0.2s ease-out 0.25s;
+}
+.people-say-about-us .people-say-carousel-inner .people-say-about-us-image {
+  width: auto;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

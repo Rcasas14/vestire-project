@@ -12,7 +12,7 @@ p {
 
 a, a:visited, a:active, a:hover, p{
     text-decoration: none !important;
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
 ul, ul::before, ul::after {

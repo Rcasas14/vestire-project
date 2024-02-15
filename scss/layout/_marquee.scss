@@ -3,6 +3,7 @@
 @use "../globals/boilerplates" as *;
 
 .marquee {
+    margin: 50px 0;
     .marquee-content {
         background-color: var(--secondary-color);
         font-family: font.$ibrra-real-nava;

@@ -3,11 +3,16 @@
 
 .third-hero{
     overflow: hidden;
-    position: relative;
     width: auto;
 
+    margin: 50px 0;
+
+    @include breakpoint-down(sm){
+        position: relative;
+    }
+
     @include breakpoint-up(lg){
-        height: 400px;
+        height: 90vh;
     }
 
     .third-hero-image{

@@ -4,6 +4,10 @@
 
 .section-text {
 
+    @include breakpoint-up(lg){
+        margin: 50px 0;
+    }
+
     .px-4 {
         @include breakpoint-down(sm) {
             padding: 0 !important;
