@@ -34,6 +34,7 @@ $('.owl-carousel.people-say-carousel-inner').owlCarousel({
     smartSpeed: 1000,
 });
 
+
 let carouselDesktop = document.querySelector('.first-feature');
 
 let prevScrollpos = window.scrollY;
