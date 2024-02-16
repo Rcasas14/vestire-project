@@ -292,7 +292,7 @@ ul, ul::before, ul::after {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 7;
 }
 .floating-navbar {
   top: 100%;
@@ -303,17 +303,19 @@ ul, ul::before, ul::after {
     display: none;
   }
 }
-.floating-navbar .header-mobile-logo a:hover {
-  color: #000;
+.floating-navbar .header-mobile-logo a:hover,
+.floating-navbar .header-mobile-logo a {
+  color: var(--text-color);
 }
 .floating-navbar .nav-item a {
   text-decoration: none;
   display: inline-block;
   position: relative;
+  color: var(--text-color);
 }
 .floating-navbar .nav-item a:hover {
   cursor: pointer;
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 .floating-navbar .nav-item a:after {
   content: "";
@@ -739,8 +741,8 @@ ul, ul::before, ul::after {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .people-say-about-us .carousel-inner {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin: auto 0;
   position: relative;
   height: auto;
   overflow: visible;

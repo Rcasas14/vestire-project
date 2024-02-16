@@ -50,8 +50,8 @@
     }
 
     .carousel-inner {
-        display: flex;
-        align-items: center;
+        display: block;
+        margin: auto 0;
         position: relative;
         height: auto;
         overflow: visible;

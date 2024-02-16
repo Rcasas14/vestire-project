@@ -9,7 +9,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 7;
 
     & {
         top: 100%;
@@ -21,8 +21,10 @@
     }
 
     .header-mobile-logo {
-        a:hover {
-            color: #000;
+
+        a:hover,
+        a {
+            color: var(--text-color);
         }
     }
 
@@ -32,10 +34,11 @@
             text-decoration: none;
             display: inline-block;
             position: relative;
+            color: var(--text-color);
 
             &:hover {
                 cursor: pointer;
-                color: var(--text-color);
+                color: var(--text-color) !important;
             }
 
             &:after {
